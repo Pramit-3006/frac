@@ -1,0 +1,58 @@
+detection_models:
+  - name: YOLOv9
+    framework: ultralytics
+    task: detection
+    production_weight: 0.09
+  - name: YOLOv10
+    framework: ultralytics
+    task: detection
+    production_weight: 0.10
+  - name: YOLOv11
+    framework: ultralytics
+    task: detection
+    production_weight: 0.17
+  - name: Faster R-CNN
+    framework: detectron2
+    task: detection
+    production_weight: 0.08
+  - name: Mask R-CNN
+    framework: detectron2
+    task: detection_instance_segmentation
+    production_weight: 0.12
+  - name: RetinaNet
+    framework: detectron2
+    task: detection
+    production_weight: 0.07
+  - name: EfficientDet
+    framework: tensorflow
+    task: detection
+    production_weight: 0.06
+  - name: DETR
+    framework: huggingface
+    task: detection
+    production_weight: 0.06
+  - name: RT-DETR
+    framework: huggingface
+    task: detection
+    production_weight: 0.15
+  - name: Cascade R-CNN
+    framework: mmdetection
+    task: detection
+    production_weight: 0.10
+segmentation_models:
+  - name: U-Net
+    framework: monai
+    task: segmentation
+  - name: Attention U-Net
+    framework: monai
+    task: segmentation
+  - name: TransUNet
+    framework: pytorch
+    task: segmentation
+  - name: DeepLabV3+
+    framework: tensorflow
+    task: segmentation
+  - name: nnU-Net
+    framework: nnunet
+    task: segmentation
+
