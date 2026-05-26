@@ -1,2 +1,0 @@
-"""FractureIQ FastAPI service."""
-
