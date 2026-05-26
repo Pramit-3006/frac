@@ -55,6 +55,10 @@ Docker:
 docker compose up --build
 ```
 
+## Vercel Frontend Deployment
+
+Deploy the frontend from `apps/web`. See [docs/VERCEL_DEPLOYMENT.md](docs/VERCEL_DEPLOYMENT.md).
+
 ## Primary URLs
 
 - Web UI: http://localhost:3000
